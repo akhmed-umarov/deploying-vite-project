@@ -6,7 +6,7 @@ import './App.scss'
 function App() {
   const [count, setCount] = useState(0);
   const number = useRef(0);
-  console.log(import.meta.env.VITE__SOME__TEXT , number.current);
+  console.log(import.meta.env.VITE__SOME__TEXT | undefined , number.current);
   return (
     <div className="App" onClick={()=> number.current++}>
       <div>
